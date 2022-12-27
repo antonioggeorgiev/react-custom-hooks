@@ -1,11 +1,14 @@
 {
 	"name": "react-handy-custom-hooks",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Custom React hooks that might be very helpful",
 	"type": "module",
 	"main": "./lib/index.js",
 	"module": "./lib/index.js",
 	"types": "./lib/index.d.ts",
+	"files": [
+		"/lib/"
+	],
 	"scripts": {
 		"test": "jest",
 		"build": "rollup -c",
@@ -24,7 +27,6 @@
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^24.0.0",
 		"@rollup/plugin-node-resolve": "^15.0.1",
-		"@rollup/plugin-typescript": "^10.0.1",
 		"@testing-library/react-hooks": "^8.0.1",
 		"@types/jest": "^29.2.4",
 		"@types/react": "^18.0.26",
@@ -33,9 +35,9 @@
 		"react-dom": "^18.2.0",
 		"react-test-renderer": "^18.2.0",
 		"rollup": "^3.8.1",
-		"rollup-plugin-dts": "^5.1.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-typescript2": "^0.34.1",
 		"ts-jest": "^29.0.3",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4"
