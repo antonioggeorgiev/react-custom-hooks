@@ -1,7 +1,7 @@
 {
-	"name": "react-handy-custom-hooks",
+	"name": "handy-react-custom-hooks",
 	"version": "0.0.1",
-	"description": "Custom React hooks that might be very helpful",
+	"description": "Custom React hooks that might be very handy",
 	"type": "module",
 	"main": "./lib/index.js",
 	"module": "./lib/index.js",
