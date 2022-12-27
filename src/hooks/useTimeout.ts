@@ -2,10 +2,15 @@ import * as React from "react";
 import { useEffect, useRef, useCallback } from "react";
 
 export const useTimeout = (cb: Function, timeout: number) => {
-	const timeoutRef = useRef<number>();
+	const timeoutRef = useRef<NodeJS.Timeout>();
+	const callbackRef = useRef(cb);
+
+	useEffect(() => {
+		callbackRef.current = cb;
+	}, [cb]);
 
 	const set = useCallback(() => {
-		timeoutRef.current = setTimeout(cb, timeout);
+		timeoutRef.current = setTimeout(() => callbackRef.current(), timeout);
 	}, [timeout]);
 
 	const clear = useCallback(() => {
