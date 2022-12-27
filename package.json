@@ -1,6 +1,6 @@
 {
 	"name": "react-handy-custom-hooks",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Custom React hooks that might be very helpful",
 	"type": "module",
 	"main": "dist/cjs/index.js",
